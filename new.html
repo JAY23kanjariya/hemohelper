@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="own.css">
+    <title>own</title>
+</head>
+<body> 
+    <header>
+            <h1>WELCOME TO HEMOHELPER</h1>
+        </header>
+    <main class="main">
+        <div class="icon-bar">
+            <a class="active" href="#"><i class="fa fa-home"> Home</i></a>
+            <a href="#"><i class="fa fa-search"> Search</i></a>
+            <a href="#"><i class="fa fa-envelope"> Email</i></a>
+            <a href="#"><i class="fa fa-fw fa-user">Login</i></a>
+            <a href="#"><i class="fa fa-globe"></i></a>
+         </div>
+        <h2><center>More details about HEMOHELPER</center></h2>
+        <button class="accordion">hemohelper</button>
+        <div class="panal">
+            <p>"HEMOHELPER" is a revolutionary blood donation platfrom that bridges the gap between urgent medical needs and willing donors. Through our streamlined process, registered students can offer their blood type and availability, while our system matches potential donors with critical cases, sending prompt requests for life-saving contributions.</p>
+        </div>
+        <button class="accordion">Be a Lifesaver:</button>
+        <div class="panal">
+            <p>your lifeline connection.Our platform unites compassionate individuals, empowering them to save lives through timely blood donations. join us in creating a network of hope and healing, where every drop counts.</p>
+        </div>
+        <button class="accordion">participating in HEMOHELPER is simple:
+        </button>
+        <div class="panal">
+            <p>                
+                <ol>
+                    <li>Sign up and create your profile.</li>
+                    <li>Share your blood group and availability</li>
+                    <li>When an Emergency arises, receive a notification to save a life through quick and compassionate blood donation. your selfless act can make all the difference.</li>
+                </ol>
+             </p>
+        </div>
+        <button class="accordion">WHY to donate blood</button>
+        <div class="panal">
+            <p>blood donation is a lifeline for countless individuals. Every two seconds,someone in need receives a blood tranfusion. your contribution isn't just a drop - it's a lifeline that sustains surgeries, aids trauma victims, and supports patients with chronic conditions. join us in making a lasting impact on healthcare through the power of donation.</p>
+        </div>
+        <button class="accordion"> Urgent help</button>
+        <div class="panal">
+            <p>Urgent help, Rapid response:
+                <ol>
+                    <li>Alert: When an Emergency arises, our system identifies eligible donors.</li>
+                    <li>Notifications: Donors receive instant messages, seeking their assistance.</li>
+                    <li>Response: willing donors confirm availability and commit to saving a life.</li>
+                    <li>Coordination: We facilitate seamless blood collection, connecting donors with medical facilities.</li>
+                </ol>
+            </p>
+        </div>
+    </main>
+        <footer>
+            <div class="sidenav">
+                <a href="#about">About</a>
+                <a href="#services">FAQs</a>
+                <a href="#clients">Dashboard</a>
+                <a href="#contact">Contact</a>
+              </div>
+        </footer>
+     <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("actived");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+     </script>
+</body>
+</html>

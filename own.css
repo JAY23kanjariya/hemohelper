@@ -1,0 +1,131 @@
+body
+{
+    margin: 0;
+}
+.main
+ {
+    margin-left: 150px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+.icon-bar
+{
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+.icon-bar a
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+.icon-bar a:hover
+{
+    background-color: #000;
+}
+.active
+{
+    background-color: #04aa6d;
+}
+header
+{
+    text-align: center;
+    background-color: #04aa6d;
+    padding: 20px;
+    border:1px dotted #000;
+}
+.accordion
+{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.accordion:after
+ {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+ .actived::after
+  {
+    content: "\2212";
+  }
+  
+.accordion:hover
+{
+    background-color: #ccc;
+}
+.panal
+{
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+.sidenav
+ {
+    height: 100%;
+    margin-top: 7.6pc;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a 
+  {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover 
+  {
+    color: #f1f1f1;
+  }
+  /* Default styles for all screen sizes */
+p {
+  font-size: 16px;
+}
+
+/* Media Query for Small Screens (e.g., Mobile Phones) */
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Medium Screens (e.g., Tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Media Query for Large Screens (e.g., Desktops) */
+@media only screen and (min-width: 1025px) {
+  p {
+    font-size: 18px;
+  }
+}
